@@ -1,0 +1,4 @@
+# Released files are pinned byte for byte: no end-of-line or text conversion, on add or on
+# checkout. Some frozen sources keep CRLF line endings on purpose, and MANIFEST.sha256 lists
+# sizes, so any conversion would make the manifest fail to validate.
+* -text

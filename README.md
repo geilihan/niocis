@@ -73,6 +73,20 @@ Two addendum scripts (`e9_graph_necessity.py`, `e9b_node_prior.py`) keep the aut
 paths because they read the unpublished frozen artifacts; they document method, they do not
 run from this repository.
 
+## Verify your copy
+
+Every published file is listed in `MANIFEST.sha256` with its sha256 and its size, and the tree
+is pinned byte for byte (`.gitattributes` disables end-of-line conversion), so the listing
+validates on any platform and in any clone:
+
+```bash
+python experiments/verify_manifest.py
+```
+
+It reports every missing file, every size or sha256 mismatch, and every file the manifest does
+not cover. Some frozen sources keep CRLF line endings on purpose: they are byte-identical to
+the files the experiment records hashed, so they are published unchanged.
+
 ## Licence
 
 The pseudonymized derived corpus in `release/` is CC BY 4.0 (see `release/LICENSE.txt`).
