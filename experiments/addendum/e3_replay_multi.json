@@ -1,0 +1,312 @@
+{
+ "_protocol": {
+  "recipe": "verbatim e3_replay.py (Linear probe on feats_laya_cls.npz, Adam 5e-3, 90 epochs, batch 512, RandomState(ep) shuffle; masked-renorm over declared options)",
+  "opened_knob": "torch init seed only (0..4)",
+  "llm_calls": 0,
+  "llm_source": "cached real/e3_mimo_stream.json -- refuse-to-run if absent",
+  "self_check": "SHAPE-0 (seed 0) must match the frozen e3_replay.json digit-for-digit"
+ },
+ "shape0_parity": true,
+ "frozen_reference": {
+  "mimo26_everyhop": {
+   "decision_match": 0.0957,
+   "episode_survival": 0.0
+  },
+  "typed_only": {
+   "decision_match": 0.3066,
+   "episode_survival": 0.0058
+  },
+  "typed+esc@tau0.55": {
+   "decision_match": 0.2085,
+   "episode_survival": 0.0
+  },
+  "typed+esc@tau0.75": {
+   "decision_match": 0.1912,
+   "episode_survival": 0.0
+  },
+  "typed+esc@tau0.9": {
+   "decision_match": 0.1652,
+   "episode_survival": 0.0
+  }
+ },
+ "aggregate": {
+  "typed_only": {
+   "decision_match_mean": 0.3064,
+   "decision_match_std": 0.0002,
+   "episode_survival_mean": 0.0058,
+   "episode_survival_std": 0.0,
+   "gap_wrong_cost_1_mean": 7.7901,
+   "gap_wrong_cost_1_std": 0.0023,
+   "gap_wrong_cost_3_mean": 23.3704,
+   "gap_wrong_cost_3_std": 0.007
+  },
+  "typed+esc@tau0.55": {
+   "decision_match_mean": 0.2085,
+   "decision_match_std": 0.0002,
+   "episode_survival_mean": 0.0,
+   "episode_survival_std": 0.0,
+   "gap_wrong_cost_1_mean": 8.8899,
+   "gap_wrong_cost_1_std": 0.0018,
+   "gap_wrong_cost_3_mean": 26.6696,
+   "gap_wrong_cost_3_std": 0.0055,
+   "escalation_rate_mean": 0.7413,
+   "escalation_rate_std": 0.0008
+  },
+  "typed+esc@tau0.75": {
+   "decision_match_mean": 0.1914,
+   "decision_match_std": 0.0001,
+   "episode_survival_mean": 0.0,
+   "episode_survival_std": 0.0,
+   "gap_wrong_cost_1_mean": 9.0818,
+   "gap_wrong_cost_1_std": 0.0012,
+   "gap_wrong_cost_3_mean": 27.2452,
+   "gap_wrong_cost_3_std": 0.0035,
+   "escalation_rate_mean": 0.8013,
+   "escalation_rate_std": 0.0003
+  },
+  "typed+esc@tau0.9": {
+   "decision_match_mean": 0.1654,
+   "decision_match_std": 0.0001,
+   "episode_survival_mean": 0.0,
+   "episode_survival_std": 0.0,
+   "gap_wrong_cost_1_mean": 9.3745,
+   "gap_wrong_cost_1_std": 0.0012,
+   "gap_wrong_cost_3_mean": 28.1234,
+   "gap_wrong_cost_3_std": 0.0035,
+   "escalation_rate_mean": 0.8499,
+   "escalation_rate_std": 0.0002
+  }
+ },
+ "per_seed": [
+  {
+   "seed": 0,
+   "typed_only": {
+    "name": "typed_only",
+    "decision_match": 0.3066,
+    "episodes": 345,
+    "episode_survival": 0.0058,
+    "gap_per_episode": {
+     "wrong_cost_1": 7.7884,
+     "wrong_cost_3": 23.3652
+    }
+   },
+   "typed+esc@tau0.55": {
+    "name": "typed+esc@tau0.55",
+    "decision_match": 0.2085,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 8.8899,
+     "wrong_cost_3": 26.6696
+    },
+    "escalation_rate": 0.7406
+   },
+   "typed+esc@tau0.75": {
+    "name": "typed+esc@tau0.75",
+    "decision_match": 0.1912,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.0841,
+     "wrong_cost_3": 27.2522
+    },
+    "escalation_rate": 0.8018
+   },
+   "typed+esc@tau0.9": {
+    "name": "typed+esc@tau0.9",
+    "decision_match": 0.1652,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.3768,
+     "wrong_cost_3": 28.1304
+    },
+    "escalation_rate": 0.8501
+   }
+  },
+  {
+   "seed": 1,
+   "typed_only": {
+    "name": "typed_only",
+    "decision_match": 0.3066,
+    "episodes": 345,
+    "episode_survival": 0.0058,
+    "gap_per_episode": {
+     "wrong_cost_1": 7.7884,
+     "wrong_cost_3": 23.3652
+    }
+   },
+   "typed+esc@tau0.55": {
+    "name": "typed+esc@tau0.55",
+    "decision_match": 0.2083,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 8.8928,
+     "wrong_cost_3": 26.6783
+    },
+    "escalation_rate": 0.7422
+   },
+   "typed+esc@tau0.75": {
+    "name": "typed+esc@tau0.75",
+    "decision_match": 0.1915,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.0812,
+     "wrong_cost_3": 27.2435
+    },
+    "escalation_rate": 0.801
+   },
+   "typed+esc@tau0.9": {
+    "name": "typed+esc@tau0.9",
+    "decision_match": 0.1654,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.3739,
+     "wrong_cost_3": 28.1217
+    },
+    "escalation_rate": 0.8495
+   }
+  },
+  {
+   "seed": 2,
+   "typed_only": {
+    "name": "typed_only",
+    "decision_match": 0.3066,
+    "episodes": 345,
+    "episode_survival": 0.0058,
+    "gap_per_episode": {
+     "wrong_cost_1": 7.7884,
+     "wrong_cost_3": 23.3652
+    }
+   },
+   "typed+esc@tau0.55": {
+    "name": "typed+esc@tau0.55",
+    "decision_match": 0.2088,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 8.887,
+     "wrong_cost_3": 26.6609
+    },
+    "escalation_rate": 0.7422
+   },
+   "typed+esc@tau0.75": {
+    "name": "typed+esc@tau0.75",
+    "decision_match": 0.1915,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.0812,
+     "wrong_cost_3": 27.2435
+    },
+    "escalation_rate": 0.801
+   },
+   "typed+esc@tau0.9": {
+    "name": "typed+esc@tau0.9",
+    "decision_match": 0.1654,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.3739,
+     "wrong_cost_3": 28.1217
+    },
+    "escalation_rate": 0.8501
+   }
+  },
+  {
+   "seed": 3,
+   "typed_only": {
+    "name": "typed_only",
+    "decision_match": 0.3063,
+    "episodes": 345,
+    "episode_survival": 0.0058,
+    "gap_per_episode": {
+     "wrong_cost_1": 7.7913,
+     "wrong_cost_3": 23.3739
+    }
+   },
+   "typed+esc@tau0.55": {
+    "name": "typed+esc@tau0.55",
+    "decision_match": 0.2085,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 8.8899,
+     "wrong_cost_3": 26.6696
+    },
+    "escalation_rate": 0.7401
+   },
+   "typed+esc@tau0.75": {
+    "name": "typed+esc@tau0.75",
+    "decision_match": 0.1915,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.0812,
+     "wrong_cost_3": 27.2435
+    },
+    "escalation_rate": 0.8013
+   },
+   "typed+esc@tau0.9": {
+    "name": "typed+esc@tau0.9",
+    "decision_match": 0.1654,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.3739,
+     "wrong_cost_3": 28.1217
+    },
+    "escalation_rate": 0.8498
+   }
+  },
+  {
+   "seed": 4,
+   "typed_only": {
+    "name": "typed_only",
+    "decision_match": 0.3061,
+    "episodes": 345,
+    "episode_survival": 0.0058,
+    "gap_per_episode": {
+     "wrong_cost_1": 7.7942,
+     "wrong_cost_3": 23.3826
+    }
+   },
+   "typed+esc@tau0.55": {
+    "name": "typed+esc@tau0.55",
+    "decision_match": 0.2085,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 8.8899,
+     "wrong_cost_3": 26.6696
+    },
+    "escalation_rate": 0.7414
+   },
+   "typed+esc@tau0.75": {
+    "name": "typed+esc@tau0.75",
+    "decision_match": 0.1915,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.0812,
+     "wrong_cost_3": 27.2435
+    },
+    "escalation_rate": 0.8013
+   },
+   "typed+esc@tau0.9": {
+    "name": "typed+esc@tau0.9",
+    "decision_match": 0.1654,
+    "episodes": 345,
+    "episode_survival": 0.0,
+    "gap_per_episode": {
+     "wrong_cost_1": 9.3739,
+     "wrong_cost_3": 28.1217
+    },
+    "escalation_rate": 0.8498
+   }
+  }
+ ]
+}

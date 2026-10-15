@@ -1,0 +1,172 @@
+{
+ "protocol": "E9b: node-conditional graph-free competitors vs declared A(v); same training recipe as E9/e2_laya_probe",
+ "nodes_in_train": 146,
+ "test_rows_node_known": 3868,
+ "n_test": 3875,
+ "mean_options_per_arm": {
+  "declared": 40.21,
+  "topK_node": 40.4,
+  "union_node": 40.4,
+  "flat155": 155.0
+ },
+ "ci": "paired cluster bootstrap over traces, 2000 resamples (seed-0 model)",
+ "runs": [
+  {
+   "seed": 0,
+   "arms": {
+    "declared": {
+     "acc_all": 0.3061,
+     "acc_in_space": 0.3324
+    },
+    "topK_node": {
+     "acc_all": 0.3074,
+     "acc_in_space": 0.3338
+    },
+    "union_node": {
+     "acc_all": 0.3074,
+     "acc_in_space": 0.3338
+    },
+    "flat155": {
+     "acc_all": 0.2707,
+     "acc_in_space": 0.2912
+    }
+   }
+  },
+  {
+   "seed": 1,
+   "arms": {
+    "declared": {
+     "acc_all": 0.3032,
+     "acc_in_space": 0.3293
+    },
+    "topK_node": {
+     "acc_all": 0.3055,
+     "acc_in_space": 0.3318
+    },
+    "union_node": {
+     "acc_all": 0.3055,
+     "acc_in_space": 0.3318
+    },
+    "flat155": {
+     "acc_all": 0.2676,
+     "acc_in_space": 0.2884
+    }
+   }
+  },
+  {
+   "seed": 2,
+   "arms": {
+    "declared": {
+     "acc_all": 0.3133,
+     "acc_in_space": 0.3402
+    },
+    "topK_node": {
+     "acc_all": 0.3138,
+     "acc_in_space": 0.3408
+    },
+    "union_node": {
+     "acc_all": 0.3138,
+     "acc_in_space": 0.3408
+    },
+    "flat155": {
+     "acc_all": 0.2756,
+     "acc_in_space": 0.2968
+    }
+   }
+  },
+  {
+   "seed": 3,
+   "arms": {
+    "declared": {
+     "acc_all": 0.3027,
+     "acc_in_space": 0.3288
+    },
+    "topK_node": {
+     "acc_all": 0.3032,
+     "acc_in_space": 0.329
+    },
+    "union_node": {
+     "acc_all": 0.3032,
+     "acc_in_space": 0.329
+    },
+    "flat155": {
+     "acc_all": 0.2655,
+     "acc_in_space": 0.2853
+    }
+   }
+  },
+  {
+   "seed": 4,
+   "arms": {
+    "declared": {
+     "acc_all": 0.3081,
+     "acc_in_space": 0.3346
+    },
+    "topK_node": {
+     "acc_all": 0.3097,
+     "acc_in_space": 0.3363
+    },
+    "union_node": {
+     "acc_all": 0.3097,
+     "acc_in_space": 0.3363
+    },
+    "flat155": {
+     "acc_all": 0.2741,
+     "acc_in_space": 0.296
+    }
+   }
+  }
+ ],
+ "aggregate": {
+  "declared": {
+   "mean": 0.3067,
+   "std": 0.0039,
+   "acc_in_space_mean": 0.3331
+  },
+  "topK_node": {
+   "mean": 0.3079,
+   "std": 0.0036,
+   "acc_in_space_mean": 0.3343,
+   "paired_delta_vs_declared_seed0": 0.0013,
+   "paired_delta_ci95_cluster": [
+    0.0,
+    0.0027
+   ],
+   "sign_test": {
+    "wins": 6,
+    "losses": 1,
+    "ties": 3868
+   }
+  },
+  "union_node": {
+   "mean": 0.3079,
+   "std": 0.0036,
+   "acc_in_space_mean": 0.3343,
+   "paired_delta_vs_declared_seed0": 0.0013,
+   "paired_delta_ci95_cluster": [
+    0.0,
+    0.0027
+   ],
+   "sign_test": {
+    "wins": 6,
+    "losses": 1,
+    "ties": 3868
+   }
+  },
+  "flat155": {
+   "mean": 0.2707,
+   "std": 0.0038,
+   "acc_in_space_mean": 0.2915,
+   "paired_delta_vs_declared_seed0": -0.0354,
+   "paired_delta_ci95_cluster": [
+    -0.041,
+    -0.0295
+   ],
+   "sign_test": {
+    "wins": 10,
+    "losses": 147,
+    "ties": 3718
+   }
+  }
+ }
+}

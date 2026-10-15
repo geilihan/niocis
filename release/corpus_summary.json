@@ -1,0 +1,647 @@
+{
+ "n_observations": 22328,
+ "n_tool_calls": 22192,
+ "n_episodes": 1615,
+ "n_sessions": 1611,
+ "catalog_size": 154,
+ "agents": {
+  "detection": 1174,
+  "recognition": 54,
+  "response": 245,
+  "protection": 139,
+  "dlp-dispose": 2,
+  "qa-agent": 1
+ },
+ "steps_per_episode": {
+  "min": 2,
+  "p50": 10,
+  "p90": 27,
+  "max": 61,
+  "mean": 13.741176470588234
+ },
+ "loop_events": {
+  "retry": 4124,
+  "back": 2364
+ },
+ "advance_hops": 15704,
+ "fwd_edges": 2536,
+ "back_edges": 702,
+ "catalog_by_steps": [
+  {
+   "action": "act_087",
+   "count": 2266
+  },
+  {
+   "action": "act_010",
+   "count": 1955
+  },
+  {
+   "action": "act_069",
+   "count": 1475
+  },
+  {
+   "action": "act_146",
+   "count": 1228
+  },
+  {
+   "action": "act_067",
+   "count": 1075
+  },
+  {
+   "action": "act_018",
+   "count": 926
+  },
+  {
+   "action": "act_060",
+   "count": 861
+  },
+  {
+   "action": "act_013",
+   "count": 820
+  },
+  {
+   "action": "act_053",
+   "count": 815
+  },
+  {
+   "action": "act_015",
+   "count": 665
+  },
+  {
+   "action": "act_025",
+   "count": 662
+  },
+  {
+   "action": "act_063",
+   "count": 570
+  },
+  {
+   "action": "act_066",
+   "count": 538
+  },
+  {
+   "action": "act_019",
+   "count": 510
+  },
+  {
+   "action": "act_088",
+   "count": 503
+  },
+  {
+   "action": "act_050",
+   "count": 382
+  },
+  {
+   "action": "act_040",
+   "count": 350
+  },
+  {
+   "action": "act_104",
+   "count": 309
+  },
+  {
+   "action": "act_124",
+   "count": 275
+  },
+  {
+   "action": "act_038",
+   "count": 273
+  },
+  {
+   "action": "act_054",
+   "count": 266
+  },
+  {
+   "action": "act_136",
+   "count": 266
+  },
+  {
+   "action": "act_051",
+   "count": 246
+  },
+  {
+   "action": "act_141",
+   "count": 245
+  },
+  {
+   "action": "act_090",
+   "count": 226
+  },
+  {
+   "action": "act_006",
+   "count": 218
+  },
+  {
+   "action": "act_140",
+   "count": 214
+  },
+  {
+   "action": "act_016",
+   "count": 163
+  },
+  {
+   "action": "act_055",
+   "count": 162
+  },
+  {
+   "action": "act_103",
+   "count": 151
+  },
+  {
+   "action": "act_110",
+   "count": 148
+  },
+  {
+   "action": "act_097",
+   "count": 148
+  },
+  {
+   "action": "act_073",
+   "count": 140
+  },
+  {
+   "action": "act_102",
+   "count": 137
+  },
+  {
+   "action": "act_078",
+   "count": 136
+  },
+  {
+   "action": "act_101",
+   "count": 136
+  },
+  {
+   "action": "act_137",
+   "count": 131
+  },
+  {
+   "action": "act_144",
+   "count": 114
+  },
+  {
+   "action": "act_064",
+   "count": 114
+  },
+  {
+   "action": "act_133",
+   "count": 105
+  },
+  {
+   "action": "act_142",
+   "count": 97
+  },
+  {
+   "action": "act_031",
+   "count": 97
+  },
+  {
+   "action": "act_048",
+   "count": 94
+  },
+  {
+   "action": "act_125",
+   "count": 89
+  },
+  {
+   "action": "act_138",
+   "count": 85
+  },
+  {
+   "action": "act_134",
+   "count": 76
+  },
+  {
+   "action": "act_154",
+   "count": 72
+  },
+  {
+   "action": "act_108",
+   "count": 70
+  },
+  {
+   "action": "act_075",
+   "count": 68
+  },
+  {
+   "action": "act_098",
+   "count": 65
+  },
+  {
+   "action": "act_121",
+   "count": 63
+  },
+  {
+   "action": "act_145",
+   "count": 62
+  },
+  {
+   "action": "act_149",
+   "count": 59
+  },
+  {
+   "action": "act_131",
+   "count": 54
+  },
+  {
+   "action": "act_120",
+   "count": 53
+  },
+  {
+   "action": "act_035",
+   "count": 51
+  },
+  {
+   "action": "act_082",
+   "count": 47
+  },
+  {
+   "action": "act_059",
+   "count": 43
+  },
+  {
+   "action": "act_029",
+   "count": 43
+  },
+  {
+   "action": "act_147",
+   "count": 41
+  },
+  {
+   "action": "act_089",
+   "count": 39
+  },
+  {
+   "action": "act_111",
+   "count": 36
+  },
+  {
+   "action": "act_020",
+   "count": 34
+  },
+  {
+   "action": "act_045",
+   "count": 34
+  },
+  {
+   "action": "act_130",
+   "count": 33
+  },
+  {
+   "action": "act_033",
+   "count": 32
+  },
+  {
+   "action": "act_068",
+   "count": 32
+  },
+  {
+   "action": "act_034",
+   "count": 31
+  },
+  {
+   "action": "act_117",
+   "count": 30
+  },
+  {
+   "action": "act_002",
+   "count": 30
+  },
+  {
+   "action": "act_084",
+   "count": 27
+  },
+  {
+   "action": "act_014",
+   "count": 27
+  },
+  {
+   "action": "act_004",
+   "count": 25
+  },
+  {
+   "action": "act_072",
+   "count": 25
+  },
+  {
+   "action": "act_114",
+   "count": 23
+  },
+  {
+   "action": "act_094",
+   "count": 22
+  },
+  {
+   "action": "act_143",
+   "count": 21
+  },
+  {
+   "action": "act_037",
+   "count": 21
+  },
+  {
+   "action": "act_061",
+   "count": 21
+  },
+  {
+   "action": "act_043",
+   "count": 21
+  },
+  {
+   "action": "act_001",
+   "count": 18
+  },
+  {
+   "action": "act_113",
+   "count": 17
+  },
+  {
+   "action": "act_109",
+   "count": 14
+  },
+  {
+   "action": "act_132",
+   "count": 14
+  },
+  {
+   "action": "act_021",
+   "count": 13
+  },
+  {
+   "action": "act_062",
+   "count": 12
+  },
+  {
+   "action": "act_056",
+   "count": 11
+  },
+  {
+   "action": "act_032",
+   "count": 11
+  },
+  {
+   "action": "act_047",
+   "count": 11
+  },
+  {
+   "action": "act_122",
+   "count": 10
+  },
+  {
+   "action": "act_027",
+   "count": 10
+  },
+  {
+   "action": "act_148",
+   "count": 10
+  },
+  {
+   "action": "act_083",
+   "count": 10
+  },
+  {
+   "action": "act_058",
+   "count": 10
+  },
+  {
+   "action": "act_085",
+   "count": 9
+  },
+  {
+   "action": "act_009",
+   "count": 9
+  },
+  {
+   "action": "act_026",
+   "count": 9
+  },
+  {
+   "action": "act_105",
+   "count": 8
+  },
+  {
+   "action": "act_039",
+   "count": 8
+  },
+  {
+   "action": "act_092",
+   "count": 8
+  },
+  {
+   "action": "act_099",
+   "count": 8
+  },
+  {
+   "action": "act_115",
+   "count": 8
+  },
+  {
+   "action": "act_096",
+   "count": 7
+  },
+  {
+   "action": "act_150",
+   "count": 7
+  },
+  {
+   "action": "act_153",
+   "count": 7
+  },
+  {
+   "action": "act_091",
+   "count": 6
+  },
+  {
+   "action": "act_076",
+   "count": 6
+  },
+  {
+   "action": "act_011",
+   "count": 6
+  },
+  {
+   "action": "act_107",
+   "count": 6
+  },
+  {
+   "action": "act_012",
+   "count": 5
+  },
+  {
+   "action": "act_071",
+   "count": 5
+  },
+  {
+   "action": "act_128",
+   "count": 5
+  },
+  {
+   "action": "act_139",
+   "count": 5
+  },
+  {
+   "action": "act_126",
+   "count": 5
+  },
+  {
+   "action": "act_042",
+   "count": 4
+  },
+  {
+   "action": "act_030",
+   "count": 4
+  },
+  {
+   "action": "act_080",
+   "count": 3
+  },
+  {
+   "action": "act_052",
+   "count": 3
+  },
+  {
+   "action": "act_106",
+   "count": 3
+  },
+  {
+   "action": "act_129",
+   "count": 3
+  },
+  {
+   "action": "act_074",
+   "count": 2
+  },
+  {
+   "action": "act_119",
+   "count": 2
+  },
+  {
+   "action": "act_049",
+   "count": 2
+  },
+  {
+   "action": "act_005",
+   "count": 2
+  },
+  {
+   "action": "act_127",
+   "count": 2
+  },
+  {
+   "action": "act_022",
+   "count": 2
+  },
+  {
+   "action": "act_118",
+   "count": 2
+  },
+  {
+   "action": "act_100",
+   "count": 2
+  },
+  {
+   "action": "act_081",
+   "count": 2
+  },
+  {
+   "action": "act_152",
+   "count": 2
+  },
+  {
+   "action": "act_046",
+   "count": 2
+  },
+  {
+   "action": "act_023",
+   "count": 2
+  },
+  {
+   "action": "act_057",
+   "count": 2
+  },
+  {
+   "action": "act_093",
+   "count": 1
+  },
+  {
+   "action": "act_041",
+   "count": 1
+  },
+  {
+   "action": "act_079",
+   "count": 1
+  },
+  {
+   "action": "act_017",
+   "count": 1
+  },
+  {
+   "action": "act_151",
+   "count": 1
+  },
+  {
+   "action": "act_008",
+   "count": 1
+  },
+  {
+   "action": "act_024",
+   "count": 1
+  },
+  {
+   "action": "act_044",
+   "count": 1
+  },
+  {
+   "action": "act_036",
+   "count": 1
+  },
+  {
+   "action": "act_116",
+   "count": 1
+  },
+  {
+   "action": "act_095",
+   "count": 1
+  },
+  {
+   "action": "act_007",
+   "count": 1
+  },
+  {
+   "action": "act_112",
+   "count": 1
+  },
+  {
+   "action": "act_065",
+   "count": 1
+  },
+  {
+   "action": "act_077",
+   "count": 1
+  },
+  {
+   "action": "act_135",
+   "count": 1
+  },
+  {
+   "action": "act_003",
+   "count": 1
+  },
+  {
+   "action": "act_028",
+   "count": 1
+  },
+  {
+   "action": "act_123",
+   "count": 1
+  },
+  {
+   "action": "act_086",
+   "count": 1
+  },
+  {
+   "action": "act_070",
+   "count": 1
+  }
+ ]
+}

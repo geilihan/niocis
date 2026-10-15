@@ -1,0 +1,17 @@
+% source: runs/e25_{gate,random,rand280,backoff}_rounds.json (round 8 of 8 each, same protocol)
+%         plus runs/e22_ft_terse_full_tuned_eval.json (full supervised fold) and e24 round 0 (seed)
+% Protocol: the train fold is split by trace into an anchor set (3{,}071 decisions, 281 traces) and
+% an unlabelled pool (9{,}542); the test fold is frozen at 3{,}875. Each round draws 600 pool rows,
+% the arm's own rule admits rows, the typed encoder is retrained for 2 epochs, and the frozen test fold
+% is re-scored. The gate may not read the pool row's own label: it admits a row when the current
+% model's argmax falls inside the top-3 of a variable-order backoff table built only from buffer rows.
+{\setlength{\tabcolsep}{4.5pt}\begin{tabular}{lrrrrrr}\toprule
+acquisition arm & admitted & edges & acc.\ (\%) & in-space (\%) & 90\% cov. & @20\% cov. \\\midrule
+label-free gate & 2{,}283 & 1{,}257 & 28.80 & 31.28 & 0.068 & 71.6 \\
+random, same cap (400/round) & 3{,}200 & 1{,}543 & 29.29 & 31.81 & 0.070 & 73.3 \\
+random, volume-matched (280/round) & 2{,}240 & 1{,}395 & 27.56 & 29.93 & 0.070 & 72.8 \\
+no typed model (frequency backoff) & 4{,}800 & 1{,}741 & 25.91 & 28.14 & 0.001 & 63.5 \\
+\midrule
+seed buffer only, no rounds & 0 & 1{,}015 & 28.18 & 30.61 & 0.153 & 74.8 \\
+full supervised train fold & 12{,}613 & --- & \textbf{32.15} & \textbf{34.92} & 0.150 & --- \\
+\bottomrule\end{tabular}}

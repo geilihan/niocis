@@ -1,0 +1,11 @@
+% source: runs/e22_frontier.json (information_ceiling_test) -- held-out test fold, n=3875 decisions
+% covered = decisions whose key recurs in another trace; agree = leave-one-out modal agreement
+% among those other traces. The last column requires at least two such other-trace observations.
+{\setlength{\tabcolsep}{4.5pt}\begin{tabular}{llrrr}\toprule
+key & state content & covered & agree.\ (\%) & agree., $\ge 2$ (\%) \\\midrule
+L1 & current station & 3{,}857 & 25.6 & 25.6 \\
+L2 & one preceding action & 3{,}400 & 26.5 & 27.6 \\
+L3 & three preceding actions & 1{,}694 & 38.6 & 43.4 \\
+L4 & the full action prefix & 1{,}234 & 42.8 & 44.9 \\
+L5 & L3 plus observable features & 1{,}301 & 41.2 & 44.7 \\
+\bottomrule\end{tabular}}

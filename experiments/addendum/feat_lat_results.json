@@ -1,0 +1,48 @@
+{
+ "_protocol": {
+  "recipe": "verbatim feature-MLP arm (2x128 ReLU MLP, CE+Brier, masked-renorm over declared options)",
+  "X_base": "node one-hot (t['node']) + goal one-hot + 8 numeric stats + first-flag",
+  "X_lat": "prefix latency {last, mean, max, std, sum, count, trend} (log1p)",
+  "X_arg": "per-prefix call-input key-shape counts (log1p)",
+  "n_seeds": 5,
+  "epochs": 60,
+  "batch": 512,
+  "self_check": "X_base must reproduce the published 32.78% within 0.2 points"
+ },
+ "shape0_parity": true,
+ "baseline_masked": {
+  "mean": 0.3273,
+  "std": 0.0032,
+  "per_seed": [
+   0.3249,
+   0.328,
+   0.3223,
+   0.3303,
+   0.3308
+  ]
+ },
+ "plus_latency": {
+  "mean": 0.3313,
+  "std": 0.0035,
+  "per_seed": [
+   0.3257,
+   0.3332,
+   0.3321,
+   0.336,
+   0.3293
+  ]
+ },
+ "plus_lat_arg": {
+  "mean": 0.3407,
+  "std": 0.0049,
+  "per_seed": [
+   0.3368,
+   0.3412,
+   0.3419,
+   0.3489,
+   0.3347
+  ]
+ },
+ "delta_latency_pts": 0.397,
+ "delta_lat_arg_pts": 1.342
+}

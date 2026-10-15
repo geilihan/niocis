@@ -1,0 +1,7 @@
+CC BY 4.0 (Creative Commons Attribution 4.0 International)
+https://creativecommons.org/licenses/by/4.0/
+
+Applies to the pseudonymized derived corpus in this directory. The authors'
+organization's release approval was granted on 2026-10-10, so this license is
+in force as written. The raw production export is not covered by this license
+and is not distributed.

@@ -1,0 +1,16 @@
+% source: runs/e22_ft_terse_full_frozen_eval.json, runs/e22_ft_terse_full_tuned_eval.json,
+%         runs/e23_shortlist_test_summary.json, runs/e23_verify2_jpt_summary.json, runs/b1_jpt4bft_summary.json
+% held-out test fold; the language-model arms are drawn on a seeded 200-decision sample of the same
+% fold and are accompanied by the typed encoder measured on that same sample (same denominator).
+{\setlength{\tabcolsep}{4.5pt}\begin{tabular}{lrrrrl}\toprule
+decision rule & acc.\ (\%) & in-space (\%) & cands & $n$ & note \\\midrule
+majority arm & 26.8 & -- & 1 & 3{,}875 & relevance floor \\
+feature MLP, CE$^{\dagger}$ & 32.8 & 35.6 & 1 & 3{,}875 & strongest prior readout \\
+typed encoder, frozen & 27.7 & 30.1 & 1 & 3{,}875 & parity arm \\
+typed encoder, fine-tuned & 32.2 & 34.9 & 1 & 3{,}875 & 3 epochs, seed 0 \\
+typed encoder, fine-tuned & 31.0 & -- & 1 & 200 & same sample as the rows below \\
+jpt-4b, all options & 9.0 & 9.9 & 46 & 200 & zero-shot \\
+jpt-4b, top-20 shortlist & 9.5 & 10.5 & 20 & 200 & zero-shot \\
+jpt-4b, LoRA-tuned & 31.9 & 34.6 & 40 & 3{,}875 & fine-tuned, full fold \\
+top-20 shortlist oracle & 84.0 & 90.7 & 20 & 200 & 90.7\% on the full fold \\
+\bottomrule\end{tabular}}

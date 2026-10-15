@@ -1,0 +1,20 @@
+% source: runs/e23_verify2_jpt800_summary.json (jpt-4b, zero-shot, n=800; pools 5/10/20/all),
+%         runs/e23_verify2_jpt_summary.json (same checkpoint, n=200: 9.0 all-options, 9.5 at 20),
+%         tab_router.tex (Laya zero-shot), runs/e22_ft_terse_full_tuned_eval.json (fine-tuned head),
+%         main_body.tex (10 ms typed pass).
+%         runs/b1_jpt4bft_summary.json (same checkpoint, LoRA-tuned on the train
+%         fold, scored on all 3{,}875 held-out decisions with every option).
+% Every row answers the same held-out question: choose the realised next hop among the declared
+% options. Denominators differ and are stated in the caption: the typed row scores all 3{,}875 test
+% decisions; the jpt-4b rows score a random 800-decision subset. The jpt-4b shortlist rows re-rank the same
+% declared options, so a smaller pool is an easier question, not extra information.
+{\setlength{\tabcolsep}{4.5pt}\begin{tabular}{lrrrl}\toprule
+decision rule & params & acc.\ (\%) & per decision & note \\\midrule
+jpt-4b, all options & 4B & 9.9 & 0.22\,s & zero-shot, decoder pass \\
+jpt-4b, LoRA-tuned & 4B & 31.9 & 0.24\,s & fine-tuned, full fold \\
+jpt-4b, 20 candidates & 4B & 12.1 & 0.14\,s & zero-shot, shortlist \\
+jpt-4b, 10 candidates & 4B & 14.4 & 0.11\,s & zero-shot, shortlist \\
+jpt-4b, 5 candidates & 4B & 19.9 & 0.10\,s & zero-shot, shortlist \\
+Laya zero-shot typed choice & 421M & 8.6 & 10\,ms & domain encoder, no tuning \\
+typed encoder, fine-tuned & 421M & 32.2 & 10\,ms & this work \\
+\bottomrule\end{tabular}}

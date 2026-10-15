@@ -1,0 +1,13 @@
+{\setlength{\tabcolsep}{4.5pt}\begin{tabular}{lrrrrl}\toprule
+readout arm & acc.\ (\%) & in-space (\%) & ECE-15 & AURC & $\pm$ std / config \\\midrule
+majority arm & 26.8 & -- & -- & -- & -- \\
+logistic regression$^{\dagger}$ & 32.3 & -- & -- & -- & -- \\
+feature MLP, CE$^{\dagger}$ & 32.8 & 35.6 & 0.045 & 0.409 & $\pm 0.001$ \\
+feature MLP, CE$+$Brier$^{\dagger}$ & 32.7 & 35.5 & 0.048 & 0.409 & $\pm 0.003$ \\
+edge-ID readout, CE$^{\dagger}$ & 31.4 & 34.1 & 0.082 & 0.432 & $\pm 0.007$ \\
+edge-ID readout, CE$+$Brier$^{\dagger}$ & 31.6 & 34.3 & 0.080 & 0.431 & $\pm 0.004$ \\
+hidden-state probe, CE & 30.3 & 32.9 & 0.123 & -- & $\pm 0.007$ \\
+hidden-state probe, CE$+$Brier & 30.7 & 33.3 & 0.122 & -- & $\pm 0.004$ \\
+hidden-state probe (edge-ID), CE$+$Brier & 26.6 & 28.9 & 0.458 & -- & $\pm 0.004$ \\
+Laya zero-shot typed choice & 8.6 & 9.3 & 0.031 & -- & $T=3.0$ \\
+\bottomrule\end{tabular}}

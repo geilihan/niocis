@@ -1,0 +1,9 @@
+% source: runs/e24_tersectl_eval.json, runs/e24_goal_eval.json, runs/e24_goalhist_eval.json
+% One harness, one seed, one batch size; the three arms differ only in the state string.
+% test fold n=3875; top-20 is masked recall over each state's declared options.
+{\setlength{\tabcolsep}{4.5pt}\begin{tabular}{llrrr}\toprule
+state given to the typed encoder & adds & acc.\ (\%) & in-space (\%) & top-20 (\%) \\\midrule
+last eight actions & published renderer & 32.00 & 34.75 & 89.74 \\
+last eight actions $+$ goal & task intent & \textbf{33.08} & \textbf{35.93} & 89.24 \\
+goal $+$ full own history & length, not intent & 31.69 & 34.42 & 89.18 \\
+\bottomrule\end{tabular}}

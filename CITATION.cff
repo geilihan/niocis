@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived corpus, please cite the paper below."
+title: "NIOCIS: Typed-Decision Next-Hop Routing with Node-Conditioned Option Spaces for Tool-Use Agents"
+authors:
+  - family-names: Han
+    given-names: Jin
+  - family-names: Xin
+    given-names: Mingfeng
+  - family-names: Liang
+    given-names: Feng
+  - family-names: Yu
+    given-names: Jingtao
+# TODO(author): add the arXiv id / DOI and the exact year after posting, e.g.
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+type: software
+license: CC-BY-4.0   # applies to the data in release/ ; the code licence is still TODO

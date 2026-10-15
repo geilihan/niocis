@@ -1,0 +1,8 @@
+\begin{tabular}{ll>{\raggedright\arraybackslash}p{0.55\linewidth}}\toprule
+ & item & measured effect (acc.\ /\ ECE-15 where two-sided) \\\midrule
+A1 & loop folding & 22,192 positions $\to$ 18,068 decision states (15,704 advances + 2,364 kept returns); 4,124 retries dropped, 6,488 loop events tagged (29.2\% of steps) \\
+A2 & feature MLP & 32.8\,/0.045 $\to$ 32.7\,/0.048 \\
+ & edge-ID readout & 31.4\,/0.082 $\to$ 31.6\,/0.080 \\
+ & hidden-state probe & 30.3\,/0.123 $\to$ 30.7\,/0.122 \\
+A3 & escalation sweep & $\tau{=}0.55/0.75/0.9$ $\to$ 74.1/80.2/85.0\% LLM calls, match 20.9/19.1/16.5\% \\
+\bottomrule\end{tabular}
