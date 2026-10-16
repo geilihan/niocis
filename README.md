@@ -90,7 +90,7 @@ the files the experiment records hashed, so they are published unchanged.
 ## Licence
 
 The pseudonymized derived corpus in `release/` is CC BY 4.0 (see `release/LICENSE.txt`).
-The **code** licence is not yet chosen by the author --- see `LICENSE.md`.
+The code is MIT (see `LICENSE`).
 
 ## Citation
 

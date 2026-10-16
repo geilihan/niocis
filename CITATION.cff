@@ -15,4 +15,4 @@ authors:
 #   - type: doi
 #     value: 10.5281/zenodo.XXXXXXX
 type: software
-license: CC-BY-4.0   # applies to the data in release/ ; the code licence is still TODO
+license: MIT   # the code; the derived corpus in release/ is CC-BY-4.0
